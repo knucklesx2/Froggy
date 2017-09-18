@@ -1,0 +1,117 @@
+ <!Doctype html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+       <title>Assignment 8</title>
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Logo</div>
+  <nav></nav>
+        <p>header</p>
+  </header>
+
+<article class="main">
+    <div class="Heroimage">
+      <img src="http://via.placeholder.com/1200x400"> <alt="street">
+    </div>
+  <div class="title">
+      <h2>Article title</h2>
+    </div>
+  <div class="Introduction">
+        <p>intro</p>
+    </div>
+  <div class="map">
+       <div class="box">the map</div>
+<sidebar>
+        <p>sidebar</p>
+</sidebar>
+<div class="detailimages">
+     <div class="image"></div>
+     <div class="image"></div>
+     <div class="image"></div>
+     <div class="image"></div>
+
+   <article>
+<footer>
+        <p>site footer</p>
+</footer>
+
+     </div>
+   </body>
+  </html>
+    
+
+ <a    
+/* ==============================
+   Edit the CSS below to create your grid.
+   ============================== */
+@supports (grid-area: auto){
+ article.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid template-areas:
+     "hero hero hero";
+     "title detail detail";
+     "footer footer";
+     "intro detail detail";
+     "text map map";
+   }
+  
+  
+  .heroimage{ grid-area: hero;}
+  
+  .title{ grid-area: article;}
+}
+  .introduction{ grid-area: intro;}
+
+}
+  .map{ grid-area:map;}
+
+  .detailimages{ grid-area: text}
+}
+  footer{ 
+    grid-column:1/span 2; 
+    grid-row: 3; 
+ } 
+  
+} /* end @supports 
+
+
+
+/* ---------------------------
+  this uses flexbox to center the content in the boxes. it also gives them a some styling.
+   The CSS below is not required for the grid layout. */
+  
+  header,article,sidebar,footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cd6a51;
+  border: 1px solid #333;
+  /*  height: 10em;  */
+}
+header{
+  background-color: #cd6a51;
+  }
+article{
+    background-color: #2D499A;
+  }
+sidebar{
+  background-color: #A6D56A;
+}
+footer{
+    background-color: #cd6a51;
+  }
+
+  p{
+  color: #fff;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: Helvetica Neue, Calibri, Arial, Open Sans, sans-serif;
+}
+
+
+</article>

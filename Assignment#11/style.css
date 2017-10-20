@@ -29,7 +29,7 @@ img,video{
    
   }
     
-  .heroimage { grid-area: hero; }
+  .heroimage { grid-area: hero;}
   .title { grid-area: title; }
   .intro { grid-area: intro; }
   .map { grid-area: map; }
@@ -55,95 +55,88 @@ img,video{
    The CSS below is not required for the grid layout. */
   
 
-   .style type="text/css">
+ .style: text-css;
   
-  header,article,sidebar,footer {
+  header,article,.sidebar,footer {
   display: flex;
   justify-content:center;
   align-items:center;
   background-color: #cd6a51;
   border: 2px solid #333;
-      
+ }
+
   /*  height: 10em;  */
-}
 
 }
-header{
+
+header {
   background-color: #e0e0e0; color: lightsteelblue;
   }
 
-article{
+article {
     background-color: #B0C4De; color:darkslategrey;   
   }
 
-.sidebar{
+.sidebar {
   background-color: #778899; color: lightgrey;text-align: center;
+}
+
+.sidebar {font-family:'Satisfy', sans-serif; 
 }
 
 .footer {
   background-color: #708090; color: lightsteelblue;
 }
 
-
-  .p4 {
-  color: #fff; 
-  font-weight: 300;
-  font-size: 2em;
-  font-family:Book Antiqua,Helvetica, Neue, Calibri, Arial, Open Sans, sans-serif;
- 
+h5 {font-family: 'Kite One', sans-serif;
 }
 
-sidebar {font-family:'Satisfy', sans-serif;
-}
+h4 {color: #696969;
 
+}
 h3 {text-transform: uppercase;
 }
 
-h3 {font-family:'Averia Serif Libre', cursive;
+h3 {font-family:'Mclaren', cursive;
 }
 
-h2 {
-    color:lightsleelblue;
-    text-shadow: -1px 0 grey, 0 1px slategrey, 1px 0 grey, 0 -1px darkslategrey;
-}
+h2 {text-shadow: -1px 0 grey, 0 1px slategrey , 1px 0 grey, 0 -1px steelblue;
 
+}
 h1 {text-shadow: 2px 2px 5px #000000;
 }
 
-p2 {font-family:Arial, Helvetica, sans-serif; 
+p6 {font-family:'Kaushan Script', cursive;
+    text-align:center
 }
 
-p4 { font-family:'Irish Grover', cursive;
+p5 {font-family: 'Kite One', sans-serif;
 }
 
-p6 {font-family: 'Kite One', sans-serif;}
+p4 { font-family:'Arvo', cursive; color:#696969;
+}
+
+p3 {font-family:'Irish Grover', cursive; 
+    text-shadow: -1px 0 grey, 0 1px slategrey, 1px 0 grey, 0 -1px lightgrey;
+} 
+
+p2 {font-family:'Mclaren', Helvetica, sans-serif; 
+}
   
 p1 {font-family:'Averia Serif Libre', cursive;
-}
-
-p5 {font-family:'Arvo', Marck script, cursive;
-
-}           
-
-.p6 { 
- text-align:justify; 
- text-justify: inter-word;
 }
 
 .p1 {text-indent: 50px;
 }
 
 .introduction {color:#708090;
-   font-family:'Mclaren', sans-serif, Book Antiqua;
+   font-family:'Mclaren', sans-serif;
  }
 
  .indent{text-indent: 40px;
 }
 
-a {color: #92a8d1;
-}
-
-a {font-family:Book Antiqua, Calibri;
+ a {color: #92a8d1;
 }
 
   { 
@@ -158,22 +151,22 @@ ul {
   padding: 0;
 }
 
-
 img {
-  border-radius: 10px;
+  border-radius: 15px;
 }
-figcaption {color: #lightgrey;
+figcaption {color: slategrey;
 }
 
 span.highlight { 
 background-color:#cccccc;
  }
 
- ol{ background: #778899;
- padding:9px;
+ ol { background: #778899;
+ padding:8px;
 }
 
-ol{list-style: none; counter-reset:li}
+ol {list-style: none; counter-reset:li
+}
 
 li::before {content: counter(li); color:#d3d3d3;
 display: inline-block; width:1em;
@@ -184,7 +177,6 @@ li {counter-increment:li
 
 }
 
-
 .topnav ul{
   list-style-type: none;
   margin: 0;
@@ -192,13 +184,11 @@ li {counter-increment:li
 }
 
 
-
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a.not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: block;
-  
+    display: block; 
 }
 
 @media screen and (max-width: 600px) {
@@ -207,9 +197,12 @@ li {counter-increment:li
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
- }
+    text-align: center;
+}
+ fieldset {text-align:center;
+
+}

@@ -1,11 +1,9 @@
-style.css
+/* style.css
 * ==============================
    Edit the CSS below to create your grid.
    ============================== */
- }
  
-a link href="style.css" rel="stylesheet" type="text/css" />
-*/ Basic Responsive Images and Video */
+/*  Basic Responsive Images and Video */
 
 img,video{
   width: auto;
